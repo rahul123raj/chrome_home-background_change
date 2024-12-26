@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .container .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 200px;
+
+        }
+        .container .nav-bar{
+            display: flex;
+            justify-content: flex-end;
+            padding: 1%;
+        }
+
+        .container a{
+            color: black;
+            text-decoration: none;
+            font-size: 90%;
+            /* text-shadow: 0 0 20px white ; */
+            font-weight: bold;
+        }
+
+        .container img{
+            width: 100%;
+        }
+
+        .google{
+            width: 30%;
+            margin:3% auto;
+            box-shadow: 0 0 20px silver;
+            border-radius: 20px;
+        }
+
+        .searchbar{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 55%;
+            height: 50px;
+            margin: auto;
+            border-radius: 30px;
+            box-shadow: 0 0px 5px grey;
+        }
+
+        .searchbar input{
+            border: none;
+            outline: none;
+            width: 85%;
+            height: 100%;
+            font-size: large;
+        }
+
+        input,.searchbar span{
+            height: 20px;
+        }
+
+        .btn-con{
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            bottom: 5%;
+            top: 49%;
+        }
+
+        .btn{
+            background-color: skyblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 175px;
+            border-radius: 25px;
+            cursor: pointer;
+            padding: 5px;
+        }
+        
+        .btn p{
+            font-size: 90%;
+        }
+
+        .theme{
+            width: 30%;
+            /* background-color: silver; */
+            background: linear-gradient(silver,white,silver);
+            height: 100%;
+            
+        }
+
+        .theme h4{
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        .hidden{
+            overflow: hidden;
+        }
+
+        
+
+        .chrome{
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .img{
+
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 7px;
+            justify-content: space-evenly;
+            /* background-color: aqua; */
+        }
+
+        .img img{
+            width: 150px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        
+        .white{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chrome">
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav">
+                <a href="">Gmail</a>
+                <a href="">Images</a>
+                <span class="material-symbols-outlined">
+                    apps
+                    </span>
+            </div>
+        </div>
+        <div class="google">
+            <a href="https://doodles.google/doodle/paris-games-archery-day-2/"><img src="https://www.google.com/logos/doodles/2024/paris-games-archery-day-2-6753651837110537-2xa.gif" alt=""></a>
+
+        </div>
+        <div class="searchbar">
+            <span class="material-symbols-outlined">
+                search
+                </span>
+            <input type="text" placeholder="Search Google or type a URL">
+            <span class="material-symbols-outlined">
+                mic
+                </span>
+                
+                <span class="material-symbols-outlined">
+                    center_focus_strong
+                </span>
+        </div>
+       <div class="btn-con">
+        <div class="btn" onclick="theme(event)">
+            <span class="material-symbols-outlined">
+                edit
+                </span>
+                <p>Customize Chrome</p>
+        </div>
+       </div>
+    </div>
+    <div class="theme">
+        <h4>Change theme</h4>
+        <div class="img">
+            <img src="./images/chandler-chen-aEJVd7WUjf8-unsplash.jpg" alt="">
+            <img src="./images/dave-hoefler-F4-j7I4sFBU-unsplash.jpg" alt="">
+            <img src="./images/dave-hoefler-FLdNfW3fshc-unsplash.jpg" alt="">
+            <img src="./images/francisco-jesus-navarro-hernandez-6xXt9LYQAdw-unsplash.jpg" alt="">
+            <img src="./images/james-wheeler-XuAxyq0uRT0-unsplash.jpg" alt="">
+            <img src="./images/john-towner-JgOeRuGD_Y4-unsplash.jpg" alt="">
+            <img src="./images/matthew-hume-bPTLG88PrPg-unsplash.jpg" alt="">
+            <img src="./images/patrick-schneider-5eYdj1ZTOlc-unsplash.jpg" alt="">
+            <img src="./images/ray-hennessy-xUUZcpQlqpM-unsplash.jpg" alt="">
+            <img src="./images/thomas-galler-TYJwHr4U4bg-unsplash.jpg" alt="">
+            <img src="./images/tobias-jelskov-8rN1nveQ4Bc-unsplash.jpg" alt="">
+            <img src="./images/tomas-malik-Oph_Fs9bWwg-unsplash.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+    <script>
+        let btn = document.querySelector('.btn')
+        let body = document.querySelector('body')
+
+        function theme(e){
+
+            console.log('theme')
+        }
+
+        let img = document.querySelectorAll('img')
+        
+        img.forEach((elem,i)=>{
+            elem.addEventListener('click',()=>{
+                console.log(elem,i)
+                console.log(elem.src)
+                body.style.backgroundImage = `url('${elem.src}')`
+                body.style.backgroundPosition = 'center'
+                body.style.backgroundRepeat = 'no-repeat'
+                body.style.backgroundSize = 'cover' 
+            })
+        })
+
+    </script>
+</body>
+</html>
